@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriMeal Planner - 智能膳食规划</title>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css_page1.css') }}">
+    <!-- 假设 CSS 文件存放在仓库根目录的 css/ 文件夹下 -->
+    <link rel="stylesheet" href="./css_page1.css">
 </head>
 <body>
     <!-- 头部导航 -->
@@ -98,16 +99,13 @@
 
     <script src="script.js"></script>
     <script>
-        document.getElementById('randomizeButton').addEventListener('click', function() {
-            window.location.href = "/page2";
-        });
+    document.getElementById('randomizeButton').addEventListener('click', function() {
+        window.location.href = "html_page2.html";  // 修改路径
+    });
 
-        document.getElementById('Button').addEventListener('click', function() {
-            window.location.href = "/page2";
-        });
-    </script>
-    <a href="html_page2.html">页面2</a>
-    <a href="html_page3.html">页面3</a>
-    <a href="html_page4.html">页面4</a>
+    document.getElementById('Button').addEventListener('click', function() {
+        window.location.href = "html_page2.html";  // 修改路径
+    });
+</script>
 </body>
 </html>
